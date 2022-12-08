@@ -30,6 +30,8 @@ function onLoadActions() {
 // creating the player boards
 
 function addPlayerBoard () {
+    document.getElementById("main_board").innerHTML = "";
+    onLoadActions();
     let input = document.getElementById("player_number").value;
     document.getElementById("player_boards").innerHTML = "";
 
