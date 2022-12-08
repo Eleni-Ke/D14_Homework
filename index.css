@@ -8,7 +8,7 @@ h1 {
     text-align: center;
 }
 
-.main_board {
+#main_board {
     max-width: 850px;
     border: 1px solid aliceblue;
     margin-inline: auto;
@@ -16,7 +16,15 @@ h1 {
     text-align: center;
 }
 
-.tile {
+.player_board {
+    max-width: 480px;
+    border: 1px solid aliceblue;
+    margin-inline: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tile, .playerTile {
   width: 47px;
   height: 47px;
   border-radius: 10px;
@@ -26,4 +34,8 @@ h1 {
   text-align: center;
   line-height: 47px;
   background-color: aliceblue;
+}
+
+.selected {
+    background-color: rgb(157, 201, 239);
 }

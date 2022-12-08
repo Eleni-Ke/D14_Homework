@@ -10,12 +10,13 @@
 <body>
     <h1>Bingo game</h1>
     <div class="buttons">
-        <input type="number" id="player_number" placeholder="How many players?" />
-        <input type="button" id="add_players" value="Players" onclick="addPlayer_Board()"/>
+        <input type="number" min="1" id="player_number" placeholder="How many players?" />
+        <input type="button" id="add_players" value="Players" onclick="addPlayerBoard()"/>
         <input type="button" id="random_number" value="Random Number" onclick="renderRandomNumber()" />
     </div>
-    <div class="main_board"></div>
-    <div class="player_boards"></div>
+    <div id="main_board" class="main"></div>
+    <div id="player_boards">
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
