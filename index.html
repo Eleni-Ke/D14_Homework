@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo board</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Bingo game</h1>
+    <div class="buttons">
+        <input type="number" id="player_number" placeholder="How many players?" />
+        <input type="button" id="add_players" value="Players" onclick="addPlayer_Board()"/>
+        <input type="button" id="random_number" value="Random Number" onclick="renderRandomNumber()" />
+    </div>
+    <div class="main_board"></div>
+    <div class="player_boards"></div>
+    <script src="index.js"></script>
+</body>
+</html>
